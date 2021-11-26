@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  background-image: url('reatuarant.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+</style>
+<script>
+function showDetails(food) {
+  var foodType = food.getAttribute("data-food-type");
+  alert("The " + food.innerHTML + " is a " + foodType + ".");
+}
+</script>
+</head>
+<body>
+
+<h1 style="color:green">Restaurant</h1>
+<h2 style="color:red">Click on a the item to select:</h2>
+
+
+<ul>
+  <b><h2 style="color:violet">VEG</h2>
+  <li  style="color:pink" onclick="showDetails(this)" id="paneer butter masala" data-food-type="curries">paneer butter masala</li>
+  <li  style="color:pink" onclick="showDetails(this)" id="kaju curry" data-food-type="curries">kaju curry</li>  
+   <li style="color:pink" onclick="showDetails(this)" id="mixed veg" data-food-type="curries">mixed veg </li>
+  <li style="color:pink" onclick="showDetails(this)" id="kaju biriyani" data-food-type="rice items">kaju biriyani</li>  
+<li style="color:pink" onclick="showDetails(this)" id="veg biriyani" data-food-type="rice items">veg biriyani</li>  
+<li style="color:pink" onclick="showDetails(this)" id="babycorn rice" data-food-type="rice items">babycorn rice</li>  
+</ul>
+
+
+
+<ul>
+  <h2 style="color:purple">NON-VEG</h2>
+  <li style="color:yellow"  onclick="showDetails(this)" id="chicken curry" data-food-type="curries">chicken curry</li>
+  <li style="color:yellow"  onclick="showDetails(this)" id="mutton curry" data-food-type="curries">mutton curry</li>  
+  <li  style="color:yellow"  onclick="showDetails(this)" id="fish curry" data-food-type="curries">fish curry</li>  
+</b>
+</ul>
+
+</body>
+</html>

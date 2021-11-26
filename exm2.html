@@ -1,0 +1,55 @@
+8<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  background-image: url('exm2.jpg');
+  background-size: 400px;
+  background-repeat: repeat;
+}
+
+</style>
+<script>
+    function showDetails(food) {
+      var foodType = food.getAttribute("food-type");
+      alert("The " + food.innerHTML + " is a " + foodType+" do you want to order ");
+      
+    }
+</script>
+<script>
+    function doubleclick(food) {
+      var foodType = food.remove("food-type");
+      alert("The food item   is erased ");
+    }
+</script>
+<script>
+    function resized(food) {
+      var foodType = food.remove("food-type");
+      alert("please reload to view the menu");
+      
+    }
+</script>
+
+</head>
+<body>
+    <h1>Restuarant menu card</h1>
+    <b><h2>Veg items and non-veg items will be seperate</h2></b>
+    <p>GREEN belongs to veg and RED belongs to nonveg</p>
+    <ul>
+        <h2 style="color:green">VEG</h2>
+        <li  style="color:navy" onclick="showDetails(this)" id="paneer butter masala" food-type=" veg curry">paneer butter masala</li>
+        <li  style="color:navy" onclick="showDetails(this)" id="kaju curry" food-type="veg curry">kaju curry</li>
+        <li  style="color:navy" ondblclick="doubleclick(this)" id="paneer butter masala" food-type=" veg curry">paneer butter masala</li>
+        <li  style="color:navy" ondblclick="doubleclick(this)" id="kaju curry" food-type="veg curry">kaju curry</li>
+        <li  style="color:navy" onresize="resized(this)" id="paneer butter masala" food-type=" veg curry">paneer butter masala</li>
+        <li  style="color:navy" onresize="resized(this)" id="kaju curry" food-type="veg curry">kaju curry</li>
+    </ul>
+    <ul>
+        <h2 style="color:red">NON-VEG</h2>
+        <li  style="color:bisque" onclick="showDetails(this)" id=" chicken curry" food-type=" nonveg curry">chicken curry</li>
+        <li  style="color:bisque" onclick="showDetails(this)" id="prawns curry" food-type="nonveg curry">prawns curry</li>
+    </ul>
+</body>
+</head>
+</html>

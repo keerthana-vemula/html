@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+ctx.font="30px arial";
+ctx.strokeStyle="red";
+ctx.strokeText("csse",10,50);
+
+ctx.beginPath();
+ctx.strokeStyle="yellow";
+ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+ctx.stroke();
+var grd = ctx.createLinearGradient(0, 0, 200, 0);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+ctx.fillStyle = grd;
+ctx.fillRect(100, 90, 1500, 80);
+
+var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
+
+
+
+</script>
+
+</body>
+</html>

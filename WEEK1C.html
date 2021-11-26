@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Personal Details</title>
+    </head>
+    <body>
+        <p style="font-size: 25px; font-weight: bold; font-family: Arial;"><u>Fill the following details:-</u></p>
+        <p style="color:red;">* Fields are mandatory/required</p>
+
+        <form style="margin-left: 50px; margin-right: 60px; font-size:large; font-family: Arial;">
+            <fieldset style="border:5px rgb(444, 183, 321) solid ;">
+                <legend style="color:brown; ">Registration Page</legend>
+            <label for="fname">First Name* : </label>
+            <input type="text" id="fname" name="fname" placeholder="enter first name" required><br><br>
+            <label for="lname">Last Name* : </label>
+            <input type="text" id="lname" name="lname" placeholder="enter last name" required><br>
+            
+             
+            
+            <p>Choose your Gender* :</p>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male </label><br>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female </label><br>
+            <input type="radio" id="other" name="gender">
+            <label for="other">Other </label><br><br>
+
+            <label for="dob">Date of Birth* : </label>
+            <input type="date" id="dob" name="dob"><br><br>
+            <label for="uname">User Name* : </label>
+            <input type="text" id="uname" name="uname" placeholder="enter User Name" required><br></br>
+            <label for="Password">Password* : </label>
+            <input type="password" id="Password" name="Password"  ><br></br>
+            <label for="CPassword">Conform Password* : </label>
+            <input type="password" id="CPassword" name="CPassword" placeholder="enter Conform Password" required><br></br>
+            <label for="Address">Address* : </label>
+            <input type="text" id="Address" name="Address" placeholder="enter your Address" required><br></br>
+
+
+            <label for="pcode">Postal Code* : </label>
+            <input type="number" id="pcode" name="postal code" placeholder="enter postal code" maxlength="6" required><br><br>
+            <label for="phone">Mobile Number: </label>
+
+            <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="enter mobile number"
+            /><br /><br />
+            <label for="email">Email-Id: </label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="enter email-Id"
+                required
+            /><br /><br />
+            
+           <input
+               type="reset"
+               style="
+               background-color: blueviolet;
+               color: wheat;
+               cursor: pointer;
+               margin-left: 100px;
+               "
+           />
+            <input type="submit" style="background-color: lemonchiffon; color:cornflowerblue; cursor: pointer; margin-left: 100px;">
+            </fieldset>
+        </form>
+    </body>
+</html>
